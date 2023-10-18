@@ -1,19 +1,18 @@
 import "./style/App.css";
-import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import home from './home';
-import instruction from './instruction';
+import React from "react";
+import { Routes, Route, BrowserRouter } from "react-router-dom"; // new version of react-router-dom does not suppoort Switch
+import Home from "./components/home"; // use Home instead of home for your component name
+import Instruction from "./components/instruction"; // use Home instead of Instruction for your component name
 
 function App() {
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/" component={home} />
-        <Route path="/instructions" component={instruction} />
-      </Switch>
-    </Router>
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/instructions" element={<Instruction />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
 export default App;
-
