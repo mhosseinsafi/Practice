@@ -1,14 +1,14 @@
 import "../style/instruction.css";
 import React from "react";
-import Instruction from "../asset/instruction.png";
+import InstructionImage from "../asset/instruction.png";
 
 
 
-function instruction() {
+function Instruction() {
   return (
     <div className="div-style">
       <div className="center-top">
-        <img src={Instruction} alt="quizjs" classname="instruction-image" />
+        <img src={InstructionImage} alt="quizjs" classname="instruction-image" />
       </div>
       <div className="instruction-container">
         <p>instructions Go Here.</p>
@@ -21,4 +21,4 @@ function instruction() {
   );
 }
 
-export default instruction;
+export default Instruction;
