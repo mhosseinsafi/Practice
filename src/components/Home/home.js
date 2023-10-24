@@ -1,7 +1,7 @@
-import "../style/App.css";
+import "./style.css";
 import React from "react";
-import data from "../data.json";
-import Quiz from "../asset/THELOGO.png";
+import data from "../../data.json";
+import Quiz from "../../asset/THELOGO.png";
 import { useNavigate } from "react-router-dom";
 
 function handleStartClick() {} // why  define function out of your component?
